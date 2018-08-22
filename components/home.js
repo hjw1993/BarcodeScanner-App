@@ -3,15 +3,14 @@ import {Provider} from 'react-redux';
 import { StyleSheet, Text, TouchableOpacity, View, Modal, 
     TouchableHighlight,ActivityIndicator,Image,ImageBackground} from 'react-native';
 import { RNCamera } from 'react-native-camera';
-import {BarcodeFinder} from '../scanner/barcodeScanner';
+import {BarcodeFinder} from './scanner/barcodeScanner';
 import {createStore} from 'redux';
 import PopupDialog, { DialogTitle,SlideAnimation  } from 'react-native-popup-dialog';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import * as Actions from '../actions/index'
 import FontAwesome, { Icons } from 'react-native-fontawesome';
-import {YellowBox} from 'react-native';
-YellowBox.ignoreWarnings(['Warning: ...']);
+
 
 var request = require('../common/request')
 var config = require('../common/config')
