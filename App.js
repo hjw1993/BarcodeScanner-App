@@ -11,7 +11,8 @@ import {Provider} from 'react-redux';
 import { StyleSheet, Text, TouchableOpacity, View, Modal, TouchableHighlight} from 'react-native';
 import store from './store/index'
 import Home from './components/home'
-
+import {YellowBox} from 'react-native';
+console.disableYellowBox = true
 export default class App extends Component {
 
 

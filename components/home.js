@@ -10,7 +10,8 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import * as Actions from '../actions/index'
 import FontAwesome, { Icons } from 'react-native-fontawesome';
-
+import {YellowBox} from 'react-native';
+YellowBox.ignoreWarnings(['Warning: ...']);
 
 var request = require('../common/request')
 var config = require('../common/config')
